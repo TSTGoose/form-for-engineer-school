@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/select2.css">
+    <link rel="stylesheet" href="./static/autocomplete_light/select2.css">
+    <script src="./static/autocomplete_light/select2.js"></script>
+    <script src="./static/autocomplete_light/autocomplete_light.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.full.js"></script>
+</head>
+
+<body>
+    <main class="content">
+        <div class="left-side">
+            <img src="https://www.ssti.ru/es/assets/img/logo1.png" alt="">
+        </div>
+        <div class="right-side">
+            <div class="form-wrapper">
+                <form action="" class="form-registration">
+                    <div class="inputs-container">
+                        <div class="inputs-items">
+                            <h2>Регистрация профиля</h2>
+                            <div class="item-container">
+                                <label class="item">
+                                    <input class="item__field " type="text" placeholder=" " />
+                                    <span class="item__label">Логин</span>
+                                </label>
+                            </div>
+                            <div class="item-container">
+                                <label class="item">
+                                    <input class="item__field " type="email" placeholder=" " />
+                                    <span class="item__label">Email</span>
+                                </label>
+                            </div>
+                            <div class="item-container">
+                                <label class="item">
+                                    <input class="item__field " type="password" placeholder=" " />
+                                    <span class="item__label">Пароль</span>
+                                </label>
+                            </div>
+                            <div class="item-container">
+                                <label class="item">
+                                    <input class="item__field " type="password" placeholder=" " />
+                                    <span class="item__label">Повторите пароль</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="inputs-items">
+                            <h2>Личные данные</h2>
+                            <div class="item-container">
+                                <label class="item">
+                                    <input class="item__field " type="text" placeholder=" " />
+                                    <span class="item__label">Фамилия</span>
+                                </label>
+                            </div>
+                            <div class="item-container">
+                                <label class="item">
+                                    <input class="item__field " type="email" placeholder=" " />
+                                    <span class="item__label">Имя</span>
+                                </label>
+                            </div>
+                            <div class="item-container">
+                                <label class="item">
+                                    <input class="item__field " type="text" placeholder=" " />
+                                    <span class="item__label">Отчество</span>
+                                </label>
+                            </div>
+                            <div class="item-container">
+                                <label class="item">
+                                    <input class="item__field " type="tel" placeholder=" " />
+                                    <span class="item__label">Номер телефона
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="item-container">
+                                <label class="item">
+                                    <input class="item__field " type="date" placeholder=" " />
+                                    <span class="item__label">Дата рождения</span>
+                                </label>
+                            </div>
+                            <div class="item-container">
+                                <label class="item">
+                                    <input class="item__field " type="text" placeholder=" " />
+                                    <span class="item__label">Город</span>
+                                </label>
+                            </div>
+                            <div class="item-container">
+                                <label class="item">
+                                    <input class="item__field " type="text" placeholder=" " />
+                                    <span class="item__label">Ссылка на страницу в социальной сети ВКонтакте</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="inputs-items">
+                            <h2>Контакты родителей</h2>
+                            <div class="item-container">
+                                <label class="item">
+                                    <input class="item__field " type="text" placeholder=" " />
+                                    <span class="item__label">ФИО Родителя</span>
+                                </label>
+                            </div>
+                            <div class="item-container">
+                                <label class="item">
+                                    <input class="item__field " type="tel" placeholder=" " />
+                                    <span class="item__label">Номер телефона</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="inputs-items">
+                            <h2>Почти закончили</h2>
+                            <div class="item-container">
+                                <label class="item">
+                                    <input class="item__field " type="text" placeholder=" " />
+                                    <span class="item__label">Школа</span>
+                                </label>
+                            </div>
+                            <div class="item-container">
+                                <label class="item">
+                                    <select class="item__field" name="" id="">
+                                        <option value="9">9 класс</option>
+                                        <option value="10">10 класс</option>
+                                        <option value="11">11 класс</option>
+                                    </select>
+                                    <span class="item__label">Класс</span>
+                                </label>
+                            </div>
+                            <!-- У меня не получается внедрить это, поэтому оставлю для тебя. Ты этот плагин знаешь лучше, надо сделать так, чтобы оно хотя бы работало, а там я уже на сервере стилизую -->
+                            
+                            <!-- <div class="form-group mx-sm-3 mb-2">
+                                <label for="id_subject">Предметы </label>
+                                <div>
+                                    <select name="subject" required="" id="id_subject" data-autocomplete-light-language="ru"
+                                        data-autocomplete-light-url="/school_subject/" data-autocomplete-light-function="select2" multiple=""
+                                        data-select2-id="id_subject" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">
+                                        <option value="1" data-select2-id="11">Математика</option>
+                                        <option value="2" data-select2-id="18">Физика</option>
+                                    </select>
+                                    <span
+                                        class="select2 select2-container select2-container--default select2-container--below select2-container--focus"
+                                        dir="ltr" data-select2-id="1" style="width: 17px;">
+                                        <span class="selection">
+                                            <span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1">
+                                            <ul class="select2-selection__rendered">
+                                                <li class="select2-search select2-search--inline"><input class="select2-search__field"
+                                                    type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none"
+                                                    spellcheck="false" role="textbox" aria-autocomplete="list" placeholder=""
+                                                    style="width: 0.75em;">
+                                                </li>
+                                            </ul>
+                                        </span>
+                                    </span>
+                                    <span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                </div>
+                            </div> -->
+                            <div class="item-container">
+                                <label class="item">
+                                    <select class="item__field" name="" id="">
+                                        <option value="9">Онлайн</option>
+                                        <option value="10">Офлайн</option>
+                                    </select>
+                                    <span class="item__label">Формат</span>
+                                </label>
+                            </div>
+
+                            <!-- И вот это тоже -->
+                            
+                            <!-- <div><select name="subject_dop" id="id_subject_dop" data-autocomplete-light-language="ru"
+                                    data-autocomplete-light-url="/school_subject_dop/" data-autocomplete-light-function="select2" multiple=""
+                                    data-select2-id="id_subject_dop" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">
+                                </select><span class="select2 select2-container select2-container--default select2-container--above" dir="ltr"
+                                    data-select2-id="2" style="width: 17px;"><span class="selection"><span
+                                            class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true"
+                                            aria-expanded="false" tabindex="-1">
+                                            <ul class="select2-selection__rendered">
+                                                <li class="select2-search select2-search--inline"><input class="select2-search__field" type="search"
+                                                        tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false"
+                                                        role="textbox" aria-autocomplete="list" placeholder="" style="width: 0.75em;"></li>
+                                            </ul>
+                                        </span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></div> -->
+
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <div class="buttons__navigation">
+                            <button class="buttons__button" id="prevButton" type="button">Назад</button>
+                            <button class="buttons__button" id="nextButton" type="button">Далее</button>
+                        </div>
+                        <button class="buttons__button" type="submit" disabled>Зарегистрироваться</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="./js/script.js"></script>
+
+</html>

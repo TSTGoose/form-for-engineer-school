@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial; }
+
+a,
+li,
+ul,
+ol {
+  text-decoration: none;
+  color: inherit;
+  list-style: none; }
+
+input {
+  padding: 8px; }
+
+.content {
+  display: flex; }
+
+.left-side {
+  padding: 0 32px;
+  flex: 1 1 40%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.left-side img {
+  max-width: 70%;
+  min-width: 160px; }
+
+.right-side {
+  display: flex;
+  background: linear-gradient(rgba(0, 0, 120, 0.4), rgba(120, 0, 0, 0.4)), url("https://i2.wp.com/zato-govorim.ru/wp-content/uploads/sti-5.jpg?fit=2560%2C1453&ssl=1");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  align-items: center;
+  justify-content: center; }
+
+.form-wrapper {
+  flex: 1 1 100%; }
+
+.form-registration {
+  position: relative;
+  max-width: 600px;
+  height: 600px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  background: white;
+  box-sizing: border-box;
+  padding: 32px; }
+
+.inputs-container {
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  box-sizing: border-box;
+  max-width: 600px;
+  gap: 32px;
+  top: 0;
+  left: 0;
+  padding: 32px;
+  transition: all 0.6s ease;
+  transform: translate(0, 0); }
+
+.inputs-items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  flex: 0 0 100%; }
+
+.item {
+  position: relative; }
+  .item__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 8px;
+    transform: translate(0, 0);
+    transform-origin: 0 0;
+    transition: transform 120ms ease-in;
+    background: white;
+    cursor: text; }
+  .item__field {
+    width: 100%;
+    box-sizing: border-box;
+    height: 36px; }
+    .item__field:focus, .item__field:not(:placeholder-shown) {
+      border: 2px solid black; }
+      .item__field:focus + .item__label, .item__field:not(:placeholder-shown) + .item__label {
+        transform: translate(0.25rem, -85%) scale(0.8);
+        color: var(--color-accent);
+        font-weight: 600; }
+    .item__field:not(:placeholder-shown) {
+      border: 1px solid black; }
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100%;
+  margin-top: 16px; }
+  .buttons__button {
+    padding: 8px 16px;
+    border: none;
+    background: #008cff;
+    color: white;
+    transition: 0.2s ease all;
+    cursor: pointer; }
+    .buttons__button:hover {
+      background: #00c8ff; }
+    .buttons__button[type="submit"] {
+      background: #00a000; }
+      .buttons__button[type="submit"]:hover {
+        background: #00c800; }
+
+@media screen and (max-width: 720px) {
+  .content {
+    display: block; }
+
+  .left-side {
+    height: 70px; }
+
+  .left-side img {
+    width: 30%; }
+
+  .right-side {
+    height: 100vh; } }
+
+/*# sourceMappingURL=style.css.map */
